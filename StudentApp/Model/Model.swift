@@ -1,17 +1,9 @@
-//
-//  Model.swift
-//  StudentApp
-//
-//  Created by Eliav Menachi on 11/05/2022.
-//
-
 import Foundation
 import UIKit
 import CoreData
 
 class Model{
     private init(){
-       
     }
     static let instance = Model()
     lazy var context:NSManagedObjectContext? = { () -> NSManagedObjectContext? in
@@ -49,7 +41,7 @@ class Model{
         st.name = student.name
         st.phone = student.phone
         st.avatarUrl = student.avatarUrl
-        
+        st.address = student.address
         do{
             try context.save()
         }catch let error as NSError{

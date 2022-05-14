@@ -1,11 +1,3 @@
-//
-//  StudentDao+CoreDataProperties.swift
-//  StudentApp
-//
-//  Created by Eliav Menachi on 11/05/2022.
-//
-//
-
 import Foundation
 import CoreData
 
@@ -20,7 +12,7 @@ extension StudentDao {
     @NSManaged public var name: String?
     @NSManaged public var phone: String?
     @NSManaged public var avatarUrl: String?
-
+    @NSManaged public var address: String?
 }
 
 extension StudentDao : Identifiable {
