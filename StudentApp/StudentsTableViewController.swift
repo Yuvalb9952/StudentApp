@@ -1,10 +1,3 @@
-//
-//  StudentsTableViewController.swift
-//  StudentApp
-//
-//  Created by Kely Sotsky on 06/04/2022.
-//
-
 import UIKit
 
 class StudentsTableViewController: UITableViewController {
@@ -19,8 +12,6 @@ class StudentsTableViewController: UITableViewController {
         data = Model.instance.getAllStudents()
         self.tableView.reloadData()
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

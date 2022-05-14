@@ -1,10 +1,3 @@
-//
-//  Student.swift
-//  StudentApp
-//
-//  Created by Eliav Menachi on 11/05/2022.
-//
-
 import Foundation
 
 class Student{
@@ -12,6 +5,7 @@ class Student{
     public var name: String?
     public var phone: String?
     public var avatarUrl: String?
+    public var address: String?
     
     init(){}
     
@@ -20,7 +14,6 @@ class Student{
         name = student.name
         phone = student.phone
         avatarUrl = student.avatarUrl
-        
-    }
-    
+        address = student.address
+    }    
 }

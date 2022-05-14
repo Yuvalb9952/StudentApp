@@ -1,10 +1,3 @@
-//
-//  StudentTableViewCell.swift
-//  StudentApp
-//
-//  Created by Kely Sotsky on 06/04/2022.
-//
-
 import UIKit
 
 class StudentTableViewCell: UITableViewCell {
@@ -23,13 +16,9 @@ class StudentTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         idLabel.text = id
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }
